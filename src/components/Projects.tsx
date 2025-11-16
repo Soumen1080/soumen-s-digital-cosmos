@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { useParallax } from "@/hooks/useParallax";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -36,6 +35,10 @@ const Projects = () => {
       tech: ["React", "TypeScript", "Tailwind"],
       liveUrl: "https://acredia.vercel.app/",
       githubUrl: "https://github.com/thisisouvik/Arcedia",
+      gradient: "from-blue-500 to-purple-600",
+      // Add your image path here when available:
+      // image: "/src/assets/acredia.png",
+      image: "public\\Acredia.png",
     },
     {
       title: "Herbal Supply Chain",
@@ -43,6 +46,10 @@ const Projects = () => {
       tech: ["React", "Blockchain", "Web3"],
       liveUrl: "https://herbal-supply-chain.vercel.app/",
       githubUrl: "#",
+      gradient: "from-green-500 to-emerald-600",
+      // Add your image path here when available:
+      // image: "/src/assets/herbaltrace.png",
+      image: "public\\HerbalTrace.png",
     },
     {
       title: "Sportify Bets",
@@ -50,6 +57,10 @@ const Projects = () => {
       tech: ["React", "Node.js", "MongoDB"],
       liveUrl: "https://sportify-bets-qvjkaggdl-soumen1080s-projects.vercel.app/",
       githubUrl: "#",
+      gradient: "from-orange-500 to-red-600",
+      // Add your image path here when available:
+      // image: "/src/assets/sportify.png",
+      image: "public\\Sportify.png",
     },
     {
       title: "Techverse Community",
@@ -57,6 +68,10 @@ const Projects = () => {
       tech: ["React", "Firebase", "Tailwind"],
       liveUrl: "https://techverse-community.vercel.app/",
       githubUrl: "#",
+      gradient: "from-cyan-500 to-blue-600",
+      // Add your image path here when available:
+      // image: "/src/assets/techverse.png",
+      image: "public\\TechVerse.png",
     },
     {
       title: "Credichain Verify",
@@ -64,6 +79,10 @@ const Projects = () => {
       tech: ["React", "Blockchain", "TypeScript"],
       liveUrl: "https://credichain-verify-git-main-soumen1080s-projects.vercel.app/",
       githubUrl: "#",
+      gradient: "from-purple-500 to-pink-600",
+      // Add your image path here when available:
+      // image: "/src/assets/credichain.png",
+      image: "public\\Credichain.png",
     },
   ];
 
@@ -104,7 +123,7 @@ const Projects = () => {
           transition={{ staggerChildren: 0.15 }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
               key={project.title}
               variants={itemVariants}
@@ -115,17 +134,34 @@ const Projects = () => {
               <div className="relative bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-secondary/10 transition-all duration-300" />
 
-                {/* Project Image Placeholder */}
+                {/* Project Image or Gradient Placeholder */}
                 <a
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 overflow-hidden cursor-pointer"
+                  className="block relative h-48 overflow-hidden cursor-pointer"
                 >
-                  <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-20 group-hover:opacity-30 transition-opacity">
-                    💻
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
+                  {project.image ? (
+                    /* Actual Project Screenshot */
+                    <>
+                      <img 
+                        src={project.image} 
+                        alt={`${project.title} screenshot`}
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                    </>
+                  ) : (
+                    /* Gradient Placeholder when no image */
+                    <>
+                      <div className={`w-full h-full bg-gradient-to-br ${project.gradient} transition-transform duration-500 group-hover:scale-110 flex items-center justify-center`}>
+                        <div className="text-white/20 text-8xl font-bold">
+                          {project.title.charAt(0)}
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                    </>
+                  )}
                 </a>
 
                 <div className="relative p-6 space-y-4">
