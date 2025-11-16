@@ -38,7 +38,7 @@ const Projects = () => {
       gradient: "from-blue-500 to-purple-600",
       // Add your image path here when available:
       // image: "/src/assets/acredia.png",
-      image: "public\\Acredia.png",
+      image: "/src/assets/acredia.png",
     },
     {
       title: "Herbal Supply Chain",
@@ -49,7 +49,7 @@ const Projects = () => {
       gradient: "from-green-500 to-emerald-600",
       // Add your image path here when available:
       // image: "/src/assets/herbaltrace.png",
-      image: "public\\HerbalTrace.png",
+      image: "/src/assets/HerbalTrace.png",
     },
     {
       title: "Sportify Bets",
@@ -60,7 +60,7 @@ const Projects = () => {
       gradient: "from-orange-500 to-red-600",
       // Add your image path here when available:
       // image: "/src/assets/sportify.png",
-      image: "public\\Sportify.png",
+      image: "/src/assets/Sportify.png",
     },
     {
       title: "Techverse Community",
@@ -71,7 +71,7 @@ const Projects = () => {
       gradient: "from-cyan-500 to-blue-600",
       // Add your image path here when available:
       // image: "/src/assets/techverse.png",
-      image: "public\\TechVerse.png",
+      image: "/src/assets/TechVerse.png",
     },
     {
       title: "Credichain Verify",
@@ -82,7 +82,7 @@ const Projects = () => {
       gradient: "from-purple-500 to-pink-600",
       // Add your image path here when available:
       // image: "/src/assets/credichain.png",
-      image: "public\\Credichain.png",
+      image: "/src/assets/Credichain.png",
     },
   ];
 
