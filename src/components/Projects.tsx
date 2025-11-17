@@ -36,9 +36,7 @@ const Projects = () => {
       liveUrl: "https://acredia.vercel.app/",
       githubUrl: "https://github.com/thisisouvik/Arcedia",
       gradient: "from-blue-500 to-purple-600",
-      // Add your image path here when available:
-      // image: "/src/assets/acredia.png",
-      image: "/src/assets/acredia.png",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397638/WhatsApp_Image_2025-11-16_at_12.09.06_c115a571_rdrol3.jpg",
     },
     {
       title: "Herbal Supply Chain",
@@ -47,9 +45,7 @@ const Projects = () => {
       liveUrl: "https://herbal-supply-chain.vercel.app/",
       githubUrl: "#",
       gradient: "from-green-500 to-emerald-600",
-      // Add your image path here when available:
-      // image: "/src/assets/herbaltrace.png",
-      image: "/src/assets/HerbalTrace.png",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397639/WhatsApp_Image_2025-11-16_at_12.09.34_f1a0416d_gp3gmr.jpg",
     },
     {
       title: "Sportify Bets",
@@ -58,9 +54,7 @@ const Projects = () => {
       liveUrl: "https://sportify-bets-qvjkaggdl-soumen1080s-projects.vercel.app/",
       githubUrl: "#",
       gradient: "from-orange-500 to-red-600",
-      // Add your image path here when available:
-      // image: "/src/assets/sportify.png",
-      image: "/src/assets/Sportify.png",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397638/WhatsApp_Image_2025-11-16_at_12.08.22_1687f02c_ppfkpo.jpg",
     },
     {
       title: "Techverse Community",
@@ -69,9 +63,7 @@ const Projects = () => {
       liveUrl: "https://techverse-community.vercel.app/",
       githubUrl: "#",
       gradient: "from-cyan-500 to-blue-600",
-      // Add your image path here when available:
-      // image: "/src/assets/techverse.png",
-      image: "/src/assets/TechVerse.png",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397639/WhatsApp_Image_2025-11-16_at_12.08.50_137ac4a3_xivcm7.jpg",
     },
     {
       title: "Credichain Verify",
@@ -80,9 +72,7 @@ const Projects = () => {
       liveUrl: "https://credichain-verify-git-main-soumen1080s-projects.vercel.app/",
       githubUrl: "#",
       gradient: "from-purple-500 to-pink-600",
-      // Add your image path here when available:
-      // image: "/src/assets/credichain.png",
-      image: "/src/assets/Credichain.png",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397640/WhatsApp_Image_2025-11-16_at_12.09.48_9e5ba3f6_dfebm8.jpg",
     },
   ];
 
