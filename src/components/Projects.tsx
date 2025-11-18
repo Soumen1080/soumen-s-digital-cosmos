@@ -45,7 +45,7 @@ const Projects = () => {
       liveUrl: "https://herbal-supply-chain.vercel.app/",
       githubUrl: "#",
       gradient: "from-green-500 to-emerald-600",
-      image: "",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397640/WhatsApp_Image_2025-11-16_at_12.09.48_9e5ba3f6_dfebm8.jpg",
     },
     {
       title: "Sportify Bets",
