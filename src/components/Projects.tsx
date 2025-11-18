@@ -36,7 +36,7 @@ const Projects = () => {
       liveUrl: "https://acredia.vercel.app/",
       githubUrl: "https://github.com/thisisouvik/Arcedia",
       gradient: "from-blue-500 to-purple-600",
-      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397638/WhatsApp_Image_2025-11-16_at_12.09.06_c115a571_rdrol3.jpg",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397639/WhatsApp_Image_2025-11-16_at_12.09.34_f1a0416d_gp3gmr.jpg",
     },
     {
       title: "Herbal Supply Chain",
@@ -45,7 +45,7 @@ const Projects = () => {
       liveUrl: "https://herbal-supply-chain.vercel.app/",
       githubUrl: "#",
       gradient: "from-green-500 to-emerald-600",
-      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397639/WhatsApp_Image_2025-11-16_at_12.09.34_f1a0416d_gp3gmr.jpg",
+      image: "",
     },
     {
       title: "Sportify Bets",
@@ -72,7 +72,7 @@ const Projects = () => {
       liveUrl: "https://credichain-verify-git-main-soumen1080s-projects.vercel.app/",
       githubUrl: "#",
       gradient: "from-purple-500 to-pink-600",
-      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397640/WhatsApp_Image_2025-11-16_at_12.09.48_9e5ba3f6_dfebm8.jpg",
+      image: "https://res.cloudinary.com/dfkcf0jpd/image/upload/v1763397638/WhatsApp_Image_2025-11-16_at_12.09.06_c115a571_rdrol3.jpg",
     },
   ];
 
