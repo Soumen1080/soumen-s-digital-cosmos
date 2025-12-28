@@ -59,6 +59,38 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    background-image: radial-gradient(circle at 50% 0%, rgba(120, 119, 198, 0.1) 0%, transparent 60%),
+      radial-gradient(circle at 100% 0%, rgba(74, 144, 226, 0.1) 0%, transparent 50%);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(var(--primary), 0.5),
+      0 0 20px rgba(var(--primary), 0.3),
+      0 0 30px rgba(var(--primary), 0.1);
+  }
+
+  .box-glow {
+    box-shadow: 0 0 20px rgba(var(--primary), 0.2),
+      inset 0 0 20px rgba(var(--primary), 0.1);
+  }
+
+  .glass-panel {
+    @apply bg-card/30 backdrop-blur-md border border-white/10 shadow-xl;
   }
 }

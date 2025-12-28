@@ -121,7 +121,7 @@ const Projects = () => {
               transition={{ duration: 0.6 }}
               className="group"
             >
-              <div className="relative bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 h-full">
+              <div className="relative bg-card/30 backdrop-blur-md border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(var(--primary),0.3)] h-full group-hover:scale-[1.02]">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-secondary/10 transition-all duration-300" />
 
                 {/* Project Image or Gradient Placeholder */}
@@ -134,8 +134,8 @@ const Projects = () => {
                   {project.image ? (
                     /* Actual Project Screenshot */
                     <>
-                      <img 
-                        src={project.image} 
+                      <img
+                        src={project.image}
                         alt={`${project.title} screenshot`}
                         className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                       />

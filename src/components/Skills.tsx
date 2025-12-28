@@ -46,7 +46,7 @@ const Skills = () => {
         style={{ y, opacity }}
         className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"
       />
-      
+
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -79,9 +79,9 @@ const Skills = () => {
               transition={{ duration: 0.5 }}
               className="group"
             >
-              <div className="relative bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 text-center transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20">
+              <div className="relative bg-card/30 backdrop-blur-md border border-white/5 rounded-2xl p-6 text-center transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(var(--primary),0.2)] group-hover:bg-card/40">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-secondary/10 rounded-2xl transition-all duration-300" />
-                
+
                 <div className="relative z-10">
                   <div className="text-5xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
                     {skill.icon}

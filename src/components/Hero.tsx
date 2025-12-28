@@ -17,28 +17,32 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-12 sm:pt-16 pb-8 sm:pb-12">
-      {/* 3D Background Effects with Parallax */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Cosmic Nebula Effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          style={{
-            x: mousePosition.x * 30,
-            y: mousePosition.y * 30,
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
           }}
-          className="absolute top-20 left-10 w-72 h-72 sm:w-96 sm:h-96 bg-primary/20 rounded-full blur-[100px] animate-pulse-glow"
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"
         />
         <motion.div
-          style={{
-            x: mousePosition.x * -40,
-            y: mousePosition.y * -40,
+          animate={{
+            scale: [1, 1.5, 1],
+            opacity: [0.2, 0.4, 0.2],
           }}
-          className="absolute bottom-20 right-10 w-96 h-96 sm:w-[500px] sm:h-[500px] bg-secondary/20 rounded-full blur-[120px] animate-pulse-glow"
-        />
-        <motion.div
-          style={{
-            x: mousePosition.x * 20,
-            y: mousePosition.y * 20,
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1,
           }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] bg-accent/10 rounded-full blur-[150px]"
+          className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-purple-500/20 rounded-full blur-[120px]"
         />
       </div>
 
@@ -59,7 +63,7 @@ const Hero = () => {
               className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-[1.1]"
             >
               Hi, I'm{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 text-glow">
                 Soumen Mandal
               </span>
             </motion.h1>
@@ -166,7 +170,7 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 className="relative z-10"
               >
-                <div className="w-80 h-80 sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] rounded-full overflow-hidden border-4 sm:border-[6px] lg:border-[8px] border-primary shadow-2xl shadow-primary/50 backdrop-blur-sm bg-card/30 p-1">
+                <div className="w-80 h-80 sm:w-[420px] sm:h-[420px] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] rounded-full overflow-hidden border-4 sm:border-[6px] lg:border-[8px] border-primary/50 shadow-2xl shadow-primary/30 backdrop-blur-sm bg-card/10 p-1 box-glow">
                   <img
                     src={profileImage}
                     alt="Soumen Mandal"

@@ -68,32 +68,32 @@ const About = () => {
                 Full-Stack Developer & Tech Enthusiast
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm a passionate full-stack developer with expertise in building modern web applications. 
-                With a strong foundation in both frontend and backend technologies, I create seamless 
+                I'm a passionate full-stack developer with expertise in building modern web applications.
+                With a strong foundation in both frontend and backend technologies, I create seamless
                 digital experiences that are both functional and beautiful.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My journey in web development has led me to work with cutting-edge technologies like 
-                React, Node.js, and MongoDB. I'm constantly learning and adapting to new technologies 
+                My journey in web development has led me to work with cutting-edge technologies like
+                React, Node.js, and MongoDB. I'm constantly learning and adapting to new technologies
                 to deliver the best solutions.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-4 py-4">
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-4">
-                <h4 className="text-primary font-semibold mb-1">Location</h4>
+              <div className="bg-card/30 backdrop-blur-md border border-white/5 rounded-xl p-4 hover:shadow-[0_0_20px_rgba(var(--primary),0.15)] transition-all duration-300 hover:border-primary/30">
+                <h4 className="text-primary font-semibold mb-1 drop-shadow-sm">Location</h4>
                 <p className="text-muted-foreground text-sm">India</p>
               </div>
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-4">
-                <h4 className="text-primary font-semibold mb-1">Experience</h4>
+              <div className="bg-card/30 backdrop-blur-md border border-white/5 rounded-xl p-4 hover:shadow-[0_0_20px_rgba(var(--primary),0.15)] transition-all duration-300 hover:border-primary/30">
+                <h4 className="text-primary font-semibold mb-1 drop-shadow-sm">Experience</h4>
                 <p className="text-muted-foreground text-sm">2+ Years</p>
               </div>
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-4">
-                <h4 className="text-primary font-semibold mb-1">Projects</h4>
+              <div className="bg-card/30 backdrop-blur-md border border-white/5 rounded-xl p-4 hover:shadow-[0_0_20px_rgba(var(--primary),0.15)] transition-all duration-300 hover:border-primary/30">
+                <h4 className="text-primary font-semibold mb-1 drop-shadow-sm">Projects</h4>
                 <p className="text-muted-foreground text-sm">15+ Completed</p>
               </div>
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-4">
-                <h4 className="text-primary font-semibold mb-1">Interests</h4>
+              <div className="bg-card/30 backdrop-blur-md border border-white/5 rounded-xl p-4 hover:shadow-[0_0_20px_rgba(var(--primary),0.15)] transition-all duration-300 hover:border-primary/30">
+                <h4 className="text-primary font-semibold mb-1 drop-shadow-sm">Interests</h4>
                 <p className="text-muted-foreground text-sm">AI, Web3</p>
               </div>
             </div>

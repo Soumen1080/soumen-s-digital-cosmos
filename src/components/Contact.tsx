@@ -94,13 +94,13 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 sm:mb-6">Let's Talk</h3>
               <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
-                I'm always open to discussing new projects, creative ideas, or opportunities 
+                I'm always open to discussing new projects, creative ideas, or opportunities
                 to be part of your vision. Feel free to reach out!
               </p>
             </div>
 
             <div className="space-y-4 sm:space-y-5">
-              <div className="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl hover:border-primary/50 transition-all duration-300">
+              <div className="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-card/30 backdrop-blur-md border border-white/5 rounded-xl hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(var(--primary),0.15)]">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <Mail size={24} className="sm:w-7 sm:h-7" />
                 </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl hover:border-primary/50 transition-all duration-300">
+              <div className="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-card/30 backdrop-blur-md border border-white/5 rounded-xl hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(var(--primary),0.15)]">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <MapPin size={24} className="sm:w-7 sm:h-7" />
                 </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl hover:border-primary/50 transition-all duration-300">
+              <div className="flex items-center gap-4 sm:gap-5 p-5 sm:p-6 bg-card/30 backdrop-blur-md border border-white/5 rounded-xl hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(var(--primary),0.15)]">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <Phone size={24} className="sm:w-7 sm:h-7" />
                 </div>
@@ -148,7 +148,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Your Name"
                   required
-                  className="bg-card/50 backdrop-blur-sm border-border/50 focus:border-primary transition-all duration-300 h-14 sm:h-16 text-base sm:text-lg px-5"
+                  className="bg-card/30 backdrop-blur-md border-white/5 focus:border-primary transition-all duration-300 h-14 sm:h-16 text-base sm:text-lg px-5 shadow-inner"
                 />
               </div>
 
@@ -160,7 +160,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Your Email"
                   required
-                  className="bg-card/50 backdrop-blur-sm border-border/50 focus:border-primary transition-all duration-300 h-14 sm:h-16 text-base sm:text-lg px-5"
+                  className="bg-card/30 backdrop-blur-md border-white/5 focus:border-primary transition-all duration-300 h-14 sm:h-16 text-base sm:text-lg px-5 shadow-inner"
                 />
               </div>
 
@@ -172,7 +172,7 @@ const Contact = () => {
                   placeholder="Your Message"
                   required
                   rows={6}
-                  className="bg-card/50 backdrop-blur-sm border-border/50 focus:border-primary transition-all duration-300 resize-none text-base sm:text-lg p-5 min-h-[160px] sm:min-h-[180px]"
+                  className="bg-card/30 backdrop-blur-md border-white/5 focus:border-primary transition-all duration-300 resize-none text-base sm:text-lg p-5 min-h-[160px] sm:min-h-[180px] shadow-inner"
                 />
               </div>
 
